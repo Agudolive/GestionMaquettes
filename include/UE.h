@@ -7,6 +7,9 @@ public:
     UE();
     ~UE();
     void afficher_UE()const=0;
+    /*
+    TOUS LES SETTERS GETTERS
+    */
 
 private:
     int d_code;

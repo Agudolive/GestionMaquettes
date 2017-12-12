@@ -7,6 +7,9 @@ public:
     formation(maquette &maq);
     ~formation();
     void modifier_formation(maquette &maq);
+    /*
+    TOUS LES SETTERS GETTERS
+    */
 
 private:
     maquette d_maquette;

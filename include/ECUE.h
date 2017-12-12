@@ -1,12 +1,15 @@
 #ifndef ECUE_H
 #define ECUE_H
 
-class ECUE : public UE_composee
+class ECUE
 {
 public:
     ECUE();
     ~ECUE();
     void afficher;
+    /*
+    TOUS LES SETTERS GETTERS
+    */
 
 private:
     int d_code;
