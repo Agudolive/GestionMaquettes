@@ -10,6 +10,8 @@ public:
     /*
     TOUS LES SETTERS GETTERS
     */
+    int TD()    const;
+    int TP()    const;
 
 private:
     int d_TD;
