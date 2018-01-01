@@ -4,12 +4,12 @@
 class formation
 {
 public:
+    formation();
     formation(maquette &maq);
     ~formation();
     void modifier_formation(maquette &maq);
-    /*
-    TOUS LES SETTERS GETTERS
-    */
+    void ajouter_maquette(maquette &maq);
+    void supprimer_maquette();
 
 private:
     maquette d_maquette;
