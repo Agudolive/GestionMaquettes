@@ -1,21 +1,32 @@
 #ifndef UE_SEULE_H
 #define UE_SEULE_H
 
-class UE_seule
+class UE_seule : public UE
 {
 public:
     UE_seule();
+    UE_seule(int code,
+         std::string intitule,
+         int heure_td,
+         int heure_tp,
+         int heure_cm
+    );
     ~UE_seule();
-    void afficher_UE_seule()const override;
-    /*
-    TOUS LES SETTERS GETTERS
-    */
-    int TD()    const;
-    int TP()    const;
+    void afficher_UE() override;
+
+    void modifier_heure_td(int heure_td);
+    void modifier_heure_tp(int heure_tp);
+    void modifier_heure_cm(int heure_cm);
+
+    int retourner_heure_td();
+    int retourner_heure_tp();
+    int retourner_heure_cm();
 
 private:
-    int d_TD;
-    int d_TP;
+    int d_heure_TD,
+        d_heure_TP,
+        d_heure_CM;
+
 };
 
 #endif

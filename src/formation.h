@@ -7,8 +7,7 @@ public:
     formation();
     formation(maquette &maq);
     ~formation();
-    void modifier_formation(maquette &maq);
-    void ajouter_maquette(maquette &maq);
+    void modifier_maquette(maquette &maq);
     void supprimer_maquette();
 
 private:

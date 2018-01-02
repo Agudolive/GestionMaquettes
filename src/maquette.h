@@ -18,9 +18,12 @@ public:
     void ajouter_UE(UE& ue);
     void supprimer_derniere_UE();
     void supprimer_UE(int index);
-    void retourner_UE();
-    void modifier_UE_choix(UE& ue);
-    void retourner_UE_choix();
+    vector<UE*> retourner_UEs();
+    void remplacer_UEs_choix(vector<UE_choix*> _choix);
+    void ajouter_UE_choix(UE_choix& ue_choix);
+    void supprimer_derniere_UE_choix();
+    void supprimer_UE_choix(int index);
+    vector<UE_choix*> retourner_UEs_choix();
     void modifier_domaine(std::string domaine);
     std::string retourner_domaine();
     void modifier_mention(std::string mention);
@@ -34,7 +37,7 @@ public:
 
 private:
     vector<UE*> d_UE;
-    UE_choix* d_UE_choix;
+    vector<UE_choix*> d_UE_choix;
     std::string d_domaine;
     std::string d_mention;
     std::string d_parcours;
