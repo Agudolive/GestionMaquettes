@@ -10,7 +10,7 @@ public:
        int ects
     );
     ~UE();
-    virtual void afficher_UE();
+    virtual void afficher_UE() const =0;
     void modifier_code(int code);
     void modifier_intitule(std::string intitule);
     void modifier_ects(int ects);

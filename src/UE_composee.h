@@ -12,6 +12,9 @@ public:
     );
     ~UE_composee();
     void afficher_UE() override;
+    void modifier_ECUEs(vector<ECUE*> ecues);
+    void ajouter_ECUE(ECUE* ecue);
+    void supprimer_dernier_ECUE();
 
 private:
     vector<ECUE*> d_ECUE;

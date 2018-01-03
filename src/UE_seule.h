@@ -1,12 +1,15 @@
 #ifndef UE_SEULE_H
 #define UE_SEULE_H
 
+#include "UE.h"
+
 class UE_seule : public UE
 {
 public:
     UE_seule();
     UE_seule(int code,
          std::string intitule,
+         int ects,
          int heure_td,
          int heure_tp,
          int heure_cm

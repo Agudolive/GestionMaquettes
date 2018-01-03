@@ -1,5 +1,6 @@
 #ifndef ECUE_H
 #define ECUE_H
+#include <string>
 
 class ECUE
 {
@@ -12,6 +13,8 @@ public:
          int heure_cm
     );
     ~ECUE();
+    void afficher_ECUE();
+
     void modifier_code(int code);
     void modifier_intitule(std::string intitule);
     void modifier_heure_td(int heure_td);
