@@ -1,11 +1,14 @@
 # depslib dependency file v1.0
 1513014791 source:c:\users\olivier\documents\github\gestionmaquettes\src\main.cpp
 
-1513014566 source:c:\users\olivier\documents\github\gestionmaquettes\src\ue_choix.cpp
+1514938742 source:c:\users\olivier\documents\github\gestionmaquettes\src\ue_choix.cpp
+	"UE_choix.h"
 
-1513014566 source:c:\users\olivier\documents\github\gestionmaquettes\src\ue_composee.cpp
+1514939472 source:c:\users\olivier\documents\github\gestionmaquettes\src\ue_composee.cpp
+	"UE_composee.h"
 
-1513014566 source:c:\users\olivier\documents\github\gestionmaquettes\src\ue_seule.cpp
+1514939552 source:c:\users\olivier\documents\github\gestionmaquettes\src\ue_seule.cpp
+	"UE_seule.h"
 
 1514936119 source:c:\users\olivier\documents\github\gestionmaquettes\src\ecue.cpp
 	"ECUE.h"
@@ -13,4 +16,38 @@
 
 1514936043 c:\users\olivier\documents\github\gestionmaquettes\src\ecue.h
 	<string>
+
+1513017057 source:c:\users\olivier\documents\github\gestionmaquettes\src\formation.cpp
+	"formation.h"
+
+1514938308 c:\users\olivier\documents\github\gestionmaquettes\src\formation.h
+	"maquette.h"
+
+1514938610 c:\users\olivier\documents\github\gestionmaquettes\src\maquette.h
+	"UE.h"
+	"UE_choix.h"
+	<vector>
+
+1514939258 c:\users\olivier\documents\github\gestionmaquettes\src\ue.h
+	<string>
+
+1514939263 c:\users\olivier\documents\github\gestionmaquettes\src\ue_choix.h
+	<iostream>
+	"UE.h"
+
+1513017521 source:c:\users\olivier\documents\github\gestionmaquettes\src\maquette.cpp
+	"maquette.h"
+
+1514936456 source:c:\users\olivier\documents\github\gestionmaquettes\src\ue.cpp
+	"UE.h"
+
+1514939268 c:\users\olivier\documents\github\gestionmaquettes\src\ue_composee.h
+	<vector>
+	<iostream>
+	"UE.h"
+	"ECUE.h"
+
+1514939509 c:\users\olivier\documents\github\gestionmaquettes\src\ue_seule.h
+	<iostream>
+	"UE.h"
 

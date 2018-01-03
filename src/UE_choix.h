@@ -1,5 +1,8 @@
 #ifndef UE_choix_H
 #define UE_choix_H
+#include <iostream>
+
+#include "UE.h"
 
 class UE_choix : public UE
 {
@@ -14,3 +17,5 @@ public:
     ~UE_choix();
     void afficher_UE() override;
 };
+
+#endif

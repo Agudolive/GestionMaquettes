@@ -1,5 +1,6 @@
 #ifndef UE_SEULE_H
 #define UE_SEULE_H
+#include<iostream>
 
 #include "UE.h"
 

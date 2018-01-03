@@ -1,6 +1,8 @@
 #ifndef FORMATION_H
 #define FORMATION_H
 
+#include "maquette.h"
+
 class formation
 {
 public:

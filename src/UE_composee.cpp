@@ -5,7 +5,7 @@ UE_composee::UE_composee():
     d_ECUE{}
 {}
 
-UE_composee::UE_composee(int code, std::string intitule, int ects, vector<ECUE*> ECUE):
+UE_composee::UE_composee(int code, std::string intitule, int ects, std::vector<ECUE*> ECUE):
     UE(code, intitule, ects),
     d_ECUE{ECUE}
 {}
@@ -17,17 +17,17 @@ UE_composee::~UE_composee()
 
 void UE_composee::afficher_UE()
 {
-    std::cout << "code UE : " << d_code << std::endl;
-    std::cout << "intitule UE : " << d_intitule << std::endl;
-    std::cout << "nombre d'ECTS : " << d_ECTS << std::endl;
-    for(int i=0; i < d_ECUE.size(); i++)
-        d_ECUE[i].afficher_ECUE;
+    std::cout << "code UE : " << retourner_code() << std::endl;
+    std::cout << "intitule UE : " << retourner_intitule() << std::endl;
+    std::cout << "nombre d'ECTS : " << retourner_ects() << std::endl;
+    for(unsigned int i=0; i < d_ECUE.size(); i++)
+        d_ECUE[i]->afficher_ECUE();
 }
 
-void UE_composee::modifier_ECUEs(vector<ECUE*> ecues)
+void UE_composee::modifier_ECUEs(std::vector<ECUE*> ecues)
 {
-    d_ECUE.clear;
-    for(int i=0; i < ecues.size(); i++)
+    d_ECUE.clear();
+    for(unsigned int i=0; i < ecues.size(); i++)
         d_ECUE[i] = ecues[i];
 }
 

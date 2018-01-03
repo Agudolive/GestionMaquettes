@@ -1,6 +1,8 @@
 #ifndef UE_H
 #define UE_H
 
+#include <string>
+
 class UE
 {
 public:
@@ -10,7 +12,7 @@ public:
        int ects
     );
     ~UE();
-    virtual void afficher_UE() const =0;
+    virtual void afficher_UE() =0;
     void modifier_code(int code);
     void modifier_intitule(std::string intitule);
     void modifier_ects(int ects);

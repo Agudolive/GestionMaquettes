@@ -19,42 +19,42 @@ UE_seule::~UE_seule()
 
 }
 
-UE_seule::void afficher_UE()
+void UE_seule::afficher_UE()
 {
-    std::cout << "code UE : " << d_code << std::endl;
-    std::cout << "intitule UE : " << d_intitule << std::endl;
-    std::cout << "nombre d'ECTS : " << d_ECTS << std::endl;
+    std::cout << "code UE : " << retourner_code() << std::endl;
+    std::cout << "intitule UE : " << retourner_intitule() << std::endl;
+    std::cout << "nombre d'ECTS : " << retourner_ects() << std::endl;
     std::cout << "nombre heures TD : " << d_heure_TD << std::endl;
     std::cout << "nombre heures TP : " << d_heure_TP << std::endl;
     std::cout << "nombre heures CM : " << d_heure_CM << std::endl;
 }
 
-void ECUE::modifier_heure_td(int heure_td)
+void UE_seule::modifier_heure_td(int heure_td)
 {
     d_heure_TD = heure_td;
 }
 
-void ECUE::modifier_heure_tp(int heure_tp)
+void UE_seule::modifier_heure_tp(int heure_tp)
 {
     d_heure_TP = heure_tp;
 }
 
-void ECUE::modifier_heure_cm(int heure_cm)
+void UE_seule::modifier_heure_cm(int heure_cm)
 {
     d_heure_CM = heure_cm;
 }
 
-int ECUE::retourner_heure_td()
+int UE_seule::retourner_heure_td()
 {
     return d_heure_TD;
 }
 
-int ECUE::retourner_heure_tp()
+int UE_seule::retourner_heure_tp()
 {
     return d_heure_TP;
 }
 
-int ECUE::retourner_heure_cm()
+int UE_seule::retourner_heure_cm()
 {
     return d_heure_CM;
 }
