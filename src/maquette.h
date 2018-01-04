@@ -18,6 +18,9 @@ public:
              int semestre
     );
     ~maquette();
+    
+    maquette& operator=(const maquette &maq);
+    
     void remplacer_UEs(std::vector<UE*> UEs);
     void ajouter_UE(UE& ue);
     void supprimer_derniere_UE();
